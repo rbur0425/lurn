@@ -1,0 +1,11 @@
+{
+    "name": "roland/lurn",
+    "description": "A new UI for the Lurn.Com LMS.",
+    "authors": [
+        {
+            "name": "rbur0425",
+            "email": "14355895+rbur0425@users.noreply.github.com"
+        }
+    ],
+    "require": {}
+}

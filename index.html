@@ -1,0 +1,372 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>Lurn.Com by Roland Burke</title>
+  <meta name="description" content="Lurn.Com by Roland Burke">
+  <meta name="author" content="Roland Burke">
+
+  <link rel="apple-touch-icon" sizes="57x57" href="https://www.lurn.com/images/favicon/apple-icon-57x57.png?v2">
+  <link rel="apple-touch-icon" sizes="60x60" href="https://www.lurn.com/images/favicon/apple-icon-60x60.png?v2">
+  <link rel="apple-touch-icon" sizes="72x72" href="https://www.lurn.com/images/favicon/apple-icon-72x72.png?v2">
+  <link rel="apple-touch-icon" sizes="76x76" href="https://www.lurn.com/images/favicon/apple-icon-76x76.png?v2">
+  <link rel="apple-touch-icon" sizes="114x114" href="https://www.lurn.com/images/favicon/apple-icon-114x114.png?v2">
+  <link rel="apple-touch-icon" sizes="120x120" href="https://www.lurn.com/images/favicon/apple-icon-120x120.png?v2">
+  <link rel="apple-touch-icon" sizes="144x144" href="https://www.lurn.com/images/favicon/apple-icon-144x144.png?v2">
+  <link rel="apple-touch-icon" sizes="152x152" href="https://www.lurn.com/images/favicon/apple-icon-152x152.png?v2">
+  <link rel="apple-touch-icon" sizes="180x180" href="https://www.lurn.com/images/favicon/apple-icon-180x180.png?v2">
+  <link rel="icon" type="image/png" sizes="192x192"  href="https://www.lurn.com/images/favicon/android-icon-192x192.png?v2">
+  <link rel="icon" type="image/png" sizes="32x32" href="https://www.lurn.com/images/favicon/favicon-32x32.png?v2">
+  <link rel="icon" type="image/png" sizes="96x96" href="https://www.lurn.com/images/favicon/favicon-96x96.png?v2">
+  <link rel="icon" type="image/png" sizes="16x16" href="https://www.lurn.com/images/favicon/favicon-16x16.png?v2">
+  <link rel="shortcut icon" href="https://www.lurn.com/images/favicon/favicon.ico?v2" type="image/x-icon">
+  <link rel="icon" href="https://www.lurn.com/images/favicon/favicon.ico?v2" type="image/x-icon">
+  <link rel="manifest" href="https://www.lurn.com/images/favicon/manifest.json?v2">
+
+<link href="css/tailwind.css" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+
+</head>
+
+<body class="antialiased bg-gray-200">
+<div id="app">
+  <header>
+  <nav class="bg-white shadow">
+    <!--
+  Tailwind UI components require Tailwind CSS v1.8 and the @tailwindcss/ui plugin.
+  Read the documentation to get started: https://tailwindui.com/documentation
+-->
+<!-- This example requires Tailwind CSS v1.4.0+ -->
+<div class="relative bg-white">
+  <div class="flex justify-between items-center px-4 py-6 sm:px-6 md:justify-start md:space-x-10">
+    <div>
+      <a href="#" class="flex">
+        <svg data-v-b0eba650="" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" xml:space="preserve" viewBox="54 217 720 355.7" fill="#1a3e6f" class="h-8 block w-auto"><g data-v-b0eba650=""><path data-v-b0eba650="" d="M497.8,306.7v92.8c0,28.1-7.3,46.5-22,55.3c-14.5,8.7-31.2,13.2-48.1,13c-16.4-0.7-32.4-5.6-46.4-14.3
+          c-14.1-8.7-21.1-26.7-21.1-54v-92.8h41.3v101c-0.7,7.9,2.4,15.6,8.3,20.8c5.4,4.4,12.1,6.8,19.1,6.7c7,0,13.8-2.3,19.3-6.6
+          c6.1-5.1,9.3-12.9,8.6-20.8v-80.9c0-5.3,2-10.4,5.8-14.2c3.8-3.9,9.1-6,14.6-5.8h20.6L497.8,306.7L497.8,306.7z"></path> <path data-v-b0eba650="" d="M504.3,464.7v-76.7c-0.4-13.3,1.9-26.5,6.8-38.9c4.1-9.8,10.5-18.5,18.7-25.2c7.8-6.1,16.8-10.6,26.4-13.1
+          c10.2-2.8,20.7-4.2,31.2-4.2h5.8v42.2h-13.7c-9.3-0.8-18.5,2.2-25.6,8.3c-6.1,7.3-9,16.7-8.1,26.2v81.2h-41.6L504.3,464.7
+          L504.3,464.7z"></path> <path data-v-b0eba650="" d="M735.4,464.7h-20.8c-10.7,0.5-19.7-7.7-20.2-18.4c0-0.6,0-1.2,0-1.8v-80.8c0.7-7.9-2.5-15.7-8.6-20.8
+          c-5.6-4.2-12.4-6.4-19.4-6.3c-6.9-0.1-13.6,2.2-19,6.6c-5.9,5.2-9,13-8.3,20.8v100.7h-41.6v-92.8c0-27.1,7-45.1,21.1-54
+          c13.9-9,29.9-14.1,46.4-14.8c17-0.1,33.7,4.6,48.1,13.7c14.7,9.1,22,27.5,22,55.3v92.8l0,0L735.4,464.7z"></path> <path data-v-b0eba650="" d="M309.3,218.9H96c-19,0-34.4,15.4-34.4,34.4l0,0l0,0v214.3c0,12.9,0.5,101.9,0.5,101.9l54-67.4h193.3
+          c19,0,34.4-15.4,34.4-34.4l0,0V253.3C343.8,234.3,328.4,218.9,309.3,218.9L309.3,218.9C309.4,218.9,309.3,218.9,309.3,218.9z
+           M277.1,463.5H135.2V280.6c-0.1-11.8,9.4-21.3,21.2-21.4c0,0,0,0,0.1,0h21v166.3h99.7L277.1,463.5L277.1,463.5z"></path></g> <circle data-v-b0eba650="" cx="746.8" cy="292.2" r="20.6" class="st1"></circle> <path data-v-b0eba650="" d="M745.6,290.8c1.3,0,2.2-0.3,2.7-0.7c0.5-0.5,0.8-1.2,0.8-2.3c0-1.1-0.3-1.8-0.8-2.3c-0.5-0.5-1.5-0.7-2.7-0.7
+      H743v6.1H745.6 M743,295v8.9h-6.1v-23.6h9.3c3.1,0,5.4,0.5,6.8,1.6c1.5,1,2.2,2.7,2.2,4.9c0,1.6-0.4,2.8-1.1,3.8
+      c-0.8,1-1.9,1.7-3.4,2.2c0.8,0.2,1.6,0.6,2.2,1.3c0.7,0.7,1.3,1.7,2,3l3.3,6.7h-6.5l-2.9-5.9c-0.6-1.2-1.2-2-1.8-2.4
+      c-0.6-0.4-1.4-0.7-2.4-0.7H743"></path></svg>
+      </a>
+    </div>
+    <div class="-mr-2 -my-2 md:hidden">
+      <button v-on:click="showMobileMenu = ! showMobileMenu" type="button" class="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:bg-gray-100 focus:text-gray-500 transition duration-150 ease-in-out">
+        <!-- Heroicon name: menu -->
+        <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+        </svg>
+      </button>
+    </div>
+    <div class="hidden md:flex-1 md:flex md:items-center md:justify-between md:space-x-12">
+      <nav class="flex space-x-10">
+        <div class="relative">
+          <!-- Item active: "text-gray-900", Item inactive: "text-gray-500" -->
+          <button v-on:click="showCourseDropdown = ! showCourseDropdown" type="button" class="group text-gray-500 inline-flex items-center space-x-2 text-base leading-6 font-medium hover:text-gray-900 focus:outline-none focus:text-gray-900 transition ease-in-out duration-150">
+            <span>Browse Courses</span>
+            <!--
+              Heroicon name: chevron-down
+
+              Item active: "text-gray-600", Item inactive: "text-gray-400"
+            -->
+            <svg class="text-gray-400 h-5 w-5 group-hover:text-gray-500 group-focus:text-gray-500 transition ease-in-out duration-150" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+              <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd" />
+            </svg>
+          </button>
+
+          <div v-if="showCourseDropdown" class="absolute -ml-4 mt-3 transform w-screen max-w-md lg:max-w-3xl z-50">
+            <div class="rounded-lg shadow-lg">
+              <div class="rounded-lg shadow-xs overflow-hidden">
+                <div class="z-20 relative grid gap-6 bg-white px-5 py-6 sm:gap-8 sm:p-8 lg:grid-cols-2">
+                 
+                  <a href="#" class="-m-3 p-3 flex items-start space-x-4 rounded-lg hover:bg-gray-50 transition ease-in-out duration-150">
+                    <div class="space-y-1">
+                      <p class="text-base leading-6 font-medium text-gray-900">
+                        Traffic
+                      </p>
+                      <p class="text-sm leading-5 text-gray-500">
+                        Learn how to drive traffic to your sales funnels.
+                      </p>
+                    </div>
+                  </a>
+                 
+                  <a href="#" class="-m-3 p-3 flex items-start space-x-4 rounded-lg hover:bg-gray-50 transition ease-in-out duration-150">
+                    <div class="space-y-1">
+                      <p class="text-base leading-6 font-medium text-gray-900">
+                        Advertising
+                      </p>
+                      <p class="text-sm leading-5 text-gray-500">
+                        Learn how to scale paid traffic.
+                      </p>
+                    </div>
+                  </a>
+
+                  <a href="#" class="-m-3 p-3 flex items-start space-x-4 rounded-lg hover:bg-gray-50 transition ease-in-out duration-150">
+                    <div class="space-y-1">
+                      <p class="text-base leading-6 font-medium text-gray-900">
+                        Sales Funnels
+                      </p>
+                      <p class="text-sm leading-5 text-gray-500">
+                        Learn how to build a funnel for your product.
+                      </p>
+                    </div>
+                  </a>
+                 
+                  <a href="#" class="-m-3 p-3 flex items-start space-x-4 rounded-lg hover:bg-gray-50 transition ease-in-out duration-150">
+                    <div class="space-y-1">
+                      <p class="text-base leading-6 font-medium text-gray-900">
+                        SEO
+                      </p>
+                      <p class="text-sm leading-5 text-gray-500">
+                        Learn how to get your pages ranked in search engines.
+                      </p>
+                    </div>
+                  </a>
+
+                  <a href="#" class="-m-3 p-3 flex items-start space-x-4 rounded-lg hover:bg-gray-50 transition ease-in-out duration-150">
+                    <div class="space-y-1">
+                      <p class="text-base leading-6 font-medium text-gray-900">
+                        Personal Development
+                      </p>
+                      <p class="text-sm leading-5 text-gray-500">
+                        Grow to become the best person you can be.
+                      </p>
+                    </div>
+                  </a>
+                 
+                  <a href="#" class="-m-3 p-3 flex items-start space-x-4 rounded-lg hover:bg-gray-50 transition ease-in-out duration-150">
+                    <div class="space-y-1">
+                      <p class="text-base leading-6 font-medium text-gray-900">
+                        Social Media
+                      </p>
+                      <p class="text-sm leading-5 text-gray-500">
+                        Learn how to use social media to grow your business.
+                      </p>
+                    </div>
+                  </a>
+                  
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <a href="#" class="text-base leading-6 font-medium text-gray-500 hover:text-gray-900 focus:outline-none focus:text-gray-900 transition ease-in-out duration-150">
+          My Courses
+        </a>
+        <a href="#" class="text-base leading-6 font-medium text-gray-500 hover:text-gray-900 focus:outline-none focus:text-gray-900 transition ease-in-out duration-150">
+          Support
+        </a>
+        <a href="#" class="text-base leading-6 font-medium text-gray-500 hover:text-gray-900 focus:outline-none focus:text-gray-900 transition ease-in-out duration-150">
+          Assesments
+        </a>
+      </nav>
+      <div class="flex-1 flex items-center justify-center px-2 lg:ml-6 lg:justify-end">
+        <div class="max-w-lg w-full lg:max-w-xs">
+          <label for="search" class="sr-only">Search</label>
+          <div class="relative">
+            <div class="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
+              <svg class="h-5 w-5 text-gray-400" fill="currentColor" viewBox="0 0 20 20">
+                <path fill-rule="evenodd" d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z" clip-rule="evenodd" />
+              </svg>
+            </div>
+            <input id="search" class="block w-full pl-10 pr-3 py-2 border border-gray-300 rounded-md leading-5 bg-white placeholder-gray-500 focus:outline-none focus:placeholder-gray-400 focus:border-blue-300 focus:shadow-outline-blue sm:text-sm transition duration-150 ease-in-out" placeholder="Search" type="search">
+          </div>
+        </div>
+      </div>
+
+      <div class="hidden lg:ml-4 lg:flex lg:items-center">
+        <button class="flex-shrink-0 p-1 border-2 border-transparent text-gray-400 rounded-full hover:text-gray-500 focus:outline-none focus:text-gray-500 focus:bg-gray-100 transition duration-150 ease-in-out" aria-label="Notifications">
+          <!-- Heroicon name: bell -->
+          <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 17h5l-1.405-1.405A2.032 2.032 0 0118 14.158V11a6.002 6.002 0 00-4-5.659V5a2 2 0 10-4 0v.341C7.67 6.165 6 8.388 6 11v3.159c0 .538-.214 1.055-.595 1.436L4 17h5m6 0v1a3 3 0 11-6 0v-1m6 0H9" />
+          </svg>
+        </button>
+
+        <!-- Profile dropdown -->
+        <div class="ml-4 relative flex-shrink-0">
+          <div>
+            <button v-on:click="showProfileDropdown = ! showProfileDropdown" class="flex text-sm border-2 border-transparent rounded-full focus:outline-none focus:border-gray-300 transition duration-150 ease-in-out" id="user-menu" aria-label="User menu" aria-haspopup="true">
+              <img class="h-8 w-8 rounded-full" src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80" alt="">
+            </button>
+          </div>
+          <div v-if="showProfileDropdown" class="origin-top-right absolute right-0 mt-2 w-48 rounded-md shadow-lg">
+            <div class="py-1 rounded-md bg-white shadow-xs" role="menu" aria-orientation="vertical" aria-labelledby="user-menu">
+              <a href="#" class="block px-4 py-2 text-sm leading-5 text-gray-700 hover:bg-gray-100 focus:outline-none focus:bg-gray-100 transition duration-150 ease-in-out" role="menuitem">Your Profile</a>
+              <a href="#" class="block px-4 py-2 text-sm leading-5 text-gray-700 hover:bg-gray-100 focus:outline-none focus:bg-gray-100 transition duration-150 ease-in-out" role="menuitem">Settings</a>
+              <a href="#" class="block px-4 py-2 text-sm leading-5 text-gray-700 hover:bg-gray-100 focus:outline-none focus:bg-gray-100 transition duration-150 ease-in-out" role="menuitem">Sign out</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+  <!-- Mobile menu -->
+  <div v-if="showMobileMenu" class="top-0 inset-x-0 p-2 transition transform origin-top-right">
+    <div class="rounded-lg shadow-lg flex flex-col">
+      <a class="pl-2 pb-2 text-gray-900 font-medium border-b-2 border-gray-400" href="#">Browse Courses</a>
+      <a class="pl-2 pb-2 text-gray-900 font-medium border-b-2 border-gray-400" href="#">My Courses</a>
+      <a class="pl-2 pb-2 text-gray-900 font-medium border-b-2 border-gray-400" href="#">Support</a>
+      <a class="pl-2 pb-2 text-gray-900 font-medium border-b-2 border-gray-400" href="#">Assessments</a>
+    </div>
+  </div>
+  </nav>
+  </header>
+
+<div class="flex flex-row max-w-7xl justify-between">
+
+<section id="left-course-content">
+<div class="hidden md:block flex-col min-h-full border-r border-gray-200 mt-1 pb-4 bg-white overflow-y-auto">
+  <div class="mt-5 flex-grow flex flex-col">
+    <nav class="flex-1 px-2 bg-white">
+      <div>
+        <h1 class="group w-full flex items-center pl-7 pr-2 py-2 text-sm leading-5 font-medium text-gray-900 rounded-md focus:outline-none focus:bg-gray-200 transition ease-in-out duration-150">
+          eSCAPE Accelerator: The 4 Stages To Become A Successful Entrepreneur
+        </h1>
+      </div>
+      <div>
+
+        <!-- Expandable link section, show/hide based on state. -->
+        <div class="mt-1 space-y-1">
+          <a href="#" class="group w-full flex items-center pl-2 pr-2 py-2 text-sm leading-5 font-medium text-gray-600 rounded-md hover:text-gray-900 hover:bg-gray-50 focus:outline-none focus:text-gray-900 focus:bg-gray-50 transition ease-in-out duration-150">
+            1. Welcome To The eSCAPE Accelerator Video Series
+          </a>
+          <a href="#" class="group w-full flex items-center pl-2 pr-2 py-2 text-sm leading-5 font-medium text-gray-600 rounded-md hover:text-gray-900 hover:bg-gray-50 focus:outline-none focus:text-gray-900 focus:bg-gray-50 transition ease-in-out duration-150">
+            2. Entrepreneurs & Intrapreneurs
+          </a>
+          <a href="#" class="group w-full flex items-center pl-2 pr-2 py-2 text-sm leading-5 font-medium text-gray-600 rounded-md hover:text-gray-900 hover:bg-gray-50 focus:outline-none focus:text-gray-900 focus:bg-gray-50 transition ease-in-out duration-150">
+            3. 5 Areas Where Employees and Entrepreneurs Differ
+          </a>
+          <a href="#" class="group w-full flex items-center pl-2 pr-2 py-2 text-sm leading-5 font-medium text-gray-600 rounded-md hover:text-gray-900 hover:bg-gray-50 focus:outline-none focus:text-gray-900 focus:bg-gray-50 transition ease-in-out duration-150">
+           4. S - Self
+          </a>
+        </div>
+      </div>
+     
+      </div>
+    </nav>
+  </div>
+</section>
+
+<section id="video-player">
+  <div class="pl-1 pr-1 mt-1">
+    <video class="" controls>
+      <source src="videos/Welcome to the eSCAPE Accelerator Video Series.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+</div>
+<div class="p-2">
+<span class="relative z-0 inline-flex shadow-sm rounded-md">
+  <button type="button" class="relative inline-flex items-center px-4 py-2 rounded-l-md border border-gray-300 bg-white text-sm leading-5 font-medium text-gray-700 hover:text-gray-500 focus:z-10 focus:outline-none focus:border-blue-300 focus:shadow-outline-blue active:bg-gray-100 active:text-gray-700 transition ease-in-out duration-150">
+    <svg class="-ml-1 mr-2 h-5 w-5 text-gray-400" xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+      <defs/>
+      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 8h10M7 12h4m1 8l-4-4H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-3l-4 4z"/>
+    </svg>
+    Save Note
+  </button>
+</span>
+<span class="relative z-0 inline-flex shadow-sm rounded-md">
+  <button type="button" class="relative inline-flex items-center px-4 py-2 rounded-l-md border border-gray-300 bg-white text-sm leading-5 font-medium text-gray-700 hover:text-gray-500 focus:z-10 focus:outline-none focus:border-blue-300 focus:shadow-outline-blue active:bg-gray-100 active:text-gray-700 transition ease-in-out duration-150">
+    <svg class="-ml-1 mr-2 h-5 w-5 text-gray-400" xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+      <defs/>
+      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 16a4 4 0 01-.88-7.903A5 5 0 1115.9 6h.1a5 5 0 011 9.9M9 19l3 3m0 0l3-3m-3 3V10"/>
+    </svg>
+    Download Video
+  </button>
+</span>
+<span class="relative z-0 inline-flex shadow-sm rounded-md">
+  <button type="button" class="relative inline-flex items-center px-4 py-2 rounded-l-md border border-gray-300 bg-white text-sm leading-5 font-medium text-gray-700 hover:text-gray-500 focus:z-10 focus:outline-none focus:border-blue-300 focus:shadow-outline-blue active:bg-gray-100 active:text-gray-700 transition ease-in-out duration-150">
+    <!-- Heroicon name: bookmark -->
+    <svg class="-ml-1 mr-2 h-5 w-5 text-gray-400" xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+      <defs/>
+      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-3 7h3m-3 4h3m-6-4h.01M9 16h.01"/>
+    </svg>
+    Download Transcript
+  </button>
+</span>
+<span class="relative z-0 inline-flex shadow-sm rounded-md">
+  <button type="button" class="relative inline-flex items-center px-4 py-2 rounded-l-md border border-gray-300 bg-white text-sm leading-5 font-medium text-gray-700 hover:text-gray-500 focus:z-10 focus:outline-none focus:border-blue-300 focus:shadow-outline-blue active:bg-gray-100 active:text-gray-700 transition ease-in-out duration-150">
+    <svg class="-ml-1 mr-2 h-5 w-5 text-gray-400" xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+      <defs/>
+      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19V6l12-3v13M9 19c0 1.105-1.343 2-3 2s-3-.895-3-2 1.343-2 3-2 3 .895 3 2zm12-3c0 1.105-1.343 2-3 2s-3-.895-3-2 1.343-2 3-2 3 .895 3 2zM9 10l12-3"/>
+    </svg>
+    Download MP3 Audio
+  </button>
+</span>
+</div>
+
+<div class="p-4 bg-white rounded-md shadow ml-2 mr-2 max-w-6xl">
+  <div class="text-gray-700 font-normal">
+    Hey, welcome to this series of videos. Welcome to the eSCAPE Series of Videos.
+Now we got this awesome book, right? Hope you started reading it. C'Mon, we
+gave you digital access. You don't have to wait for the book to reach you, but in
+the meantime you got this series of videos as well. Listen, we are going to walk
+through this book. We're going to walk through some of the core stages, the
+core phases. We're going to really talk about, you know, some of the elements
+that are that I go over with you in the book. I want to do them right here in
+video because I think when you hear me talk about it, it's going to come out so
+much more powerful. It's going to make you think it's gonna make you have that
+Aha moment. So this is just a cool welcome video.
+
+Now as you see the videos right below, okay? Go through them, watch them
+again and again, but you got to do it in conjunction with the book. It's, it's a
+team effort, okay? The book and these videos, but I'm telling you right now, for
+those of you who are watching this video, congratulations because you are
+going to get so much more out of what I teach in this book because of the fact
+that you're watching these videos, so congrats again. I look forward to working
+with you. Start right now. Start going through the videos. This is Anik Singal
+reminding you when life pushes you, stand straight, smile and push it the heck
+back. Make that progress. I'll see you in that first video right below.
+  </div>
+</div>
+</section>
+
+<section id="right-notes">
+  <div class="hidden md:block flex-col min-h-full border-r border-gray-200 mt-1 pb-4 bg-white overflow-y-auto">
+    <div class="mt-5 flex-grow flex flex-col">
+      <nav class="flex-1 px-2 bg-white">
+        <div>
+          <h1 class="group w-full flex items-center pl-7 pr-2 py-2 text-sm leading-5 font-medium text-gray-900 rounded-md focus:outline-none focus:bg-gray-200 transition ease-in-out duration-150">
+            Notes
+          </h1>
+          <ul>
+            <li class="flex flex-row items-center justify-center"><span class="text-xs text-gray-500 p-2">0:10</span>This is a note at the 10 second mark. This is the introduction to the course.</li>
+          </ul>
+        </div>
+        </nav>
+        </div>
+      </div>
+</section>
+
+
+
+</div>
+    
+</div>
+
+
+
+
+    <script>
+      var app = new Vue({
+        el: '#app',
+        data: {
+          showProfileDropdown: false,
+          showCourseDropdown: false,
+          showMobileMenu: false,
+        }
+      })
+    </script>
+
+
+</body>
+</html>
